@@ -20,7 +20,7 @@ class Prefixsum{
     int end = sc.nextInt();
     int sum = 0;
     for(int k = start;k<end;k++){
-        sum = prefix[end]-prefix[start-1];
+        sum = start ==0 ? prefix[end] : prefix[end]-prefix[start-1];
     }
     System.out.println("The sum of given subarray is : "+sum);
     }
